@@ -17,14 +17,23 @@ public class Test extends JFrame {
     private final JPanel cards;
 
     public Test() {
+    	setIconImage(Toolkit.getDefaultToolkit().getImage(Test.class.getResource("/myapp/images/images.png")));
+    	setTitle("Valorant App");
         // Create a card layout to switch between panels
         cardLayout = new CardLayout();
         cards = new JPanel(cardLayout);
 
         // Create a panel for the button
         JPanel buttonPanel = new JPanel();
+        buttonPanel.setBackground(new Color(14, 25, 35));
         JButton btnMaps = new JButton("Maps");
-        btnMaps.setBounds(0, 0, 384, 100);
+        btnMaps.setFont(new Font("Arial", Font.BOLD, 17));
+        btnMaps.setBounds(0, 55, 384, 100);
+        btnMaps.setBackground(new Color(255, 75, 80));
+        btnMaps.setForeground(Color.WHITE);
+        btnMaps.setFocusPainted(false);
+        btnMaps.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        btnMaps.setBorder(BorderFactory.createLineBorder(new Color(14, 25, 35), 3, true));
         btnMaps.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -62,6 +71,31 @@ public class Test extends JFrame {
                     }
                 });
                 dataPanel.add(backButton);
+                
+                list.addMouseListener(new java.awt.event.MouseAdapter() {
+                    @Override
+                    public void mouseClicked(java.awt.event.MouseEvent e ) {
+                        if (e.getClickCount() == 2) {
+                            String selectedItem = list.getSelectedValue();
+                            // Add code here to show the selected data on a new panel
+                            JPanel selectedMapPanel = new JPanel();
+                            JLabel selectedDataLabel = new JLabel("You selected: " + selectedItem);
+                            selectedMapPanel.add(selectedDataLabel);
+                            JButton backButton = new JButton("Back");
+                            backButton.addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    cardLayout.show(cards, "dataPanel");
+                                }
+                            });
+                            selectedMapPanel.add(backButton);
+
+                            cards.add(selectedMapPanel, "selectedMapPanel");
+                            cardLayout.show(cards, "selectedMapPanel");
+                        }
+                    }
+                });
+                
 
                 cards.add(dataPanel, "dataPanel");
 
@@ -77,8 +111,14 @@ public class Test extends JFrame {
         searchPanel.add(buttonPanel, BorderLayout.CENTER);
         
         JButton btnModes = new JButton("Modes");
-        btnModes.setBounds(0, 100, 384, 100);
+        btnModes.setFont(new Font("Arial", Font.BOLD, 17));
+        btnModes.setBounds(0, 155, 384, 100);
         buttonPanel.add(btnModes);
+        btnModes.setBackground(new Color(255, 75, 80));
+        btnModes.setForeground(Color.WHITE);
+        btnModes.setFocusPainted(false);
+        btnModes.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        btnModes.setBorder(BorderFactory.createLineBorder(new Color(14, 25, 35), 3, true));
         btnModes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -123,9 +163,9 @@ public class Test extends JFrame {
                         if (e.getClickCount() == 2) {
                             String selectedItem = list.getSelectedValue();
                             // Add code here to show the selected data on a new panel
-                            JPanel selectedDataPanel = new JPanel();
+                            JPanel selectedModePanel = new JPanel();
                             JLabel selectedDataLabel = new JLabel("You selected: " + selectedItem);
-                            selectedDataPanel.add(selectedDataLabel);
+                            selectedModePanel.add(selectedDataLabel);
                             JButton backButton = new JButton("Back");
                             backButton.addActionListener(new ActionListener() {
                                 @Override
@@ -133,10 +173,10 @@ public class Test extends JFrame {
                                     cardLayout.show(cards, "dataPanel");
                                 }
                             });
-                            selectedDataPanel.add(backButton);
+                            selectedModePanel.add(backButton);
 
-                            cards.add(selectedDataPanel, "selectedDataPanel");
-                            cardLayout.show(cards, "selectedDataPanel");
+                            cards.add(selectedModePanel, "selectedModePanel");
+                            cardLayout.show(cards, "selectedModePanel");
                         }
                     }
                 });
@@ -149,8 +189,14 @@ public class Test extends JFrame {
         });
         
         JButton btnAgents = new JButton("Agents");
-        btnAgents.setBounds(0, 200, 384, 100);
+        btnAgents.setFont(new Font("Arial", Font.BOLD, 17));
+        btnAgents.setBounds(0, 255, 384, 100);
         buttonPanel.add(btnAgents);
+        btnAgents.setBackground(new Color(255, 75, 80));
+        btnAgents.setForeground(Color.WHITE);
+        btnAgents.setFocusPainted(false);
+        btnAgents.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        btnAgents.setBorder(BorderFactory.createLineBorder(new Color(14, 25, 35), 3, true));
         btnAgents.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -188,6 +234,30 @@ public class Test extends JFrame {
                     }
                 });
                 dataPanel.add(backButton);
+                
+                list.addMouseListener(new java.awt.event.MouseAdapter() {
+                    @Override
+                    public void mouseClicked(java.awt.event.MouseEvent e ) {
+                        if (e.getClickCount() == 2) {
+                            String selectedItem = list.getSelectedValue();
+                            // Add code here to show the selected data on a new panel
+                            JPanel selectedAgentPanel = new JPanel();
+                            JLabel selectedDataLabel = new JLabel("You selected: " + selectedItem);
+                            selectedAgentPanel.add(selectedDataLabel);
+                            JButton backButton = new JButton("Back");
+                            backButton.addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    cardLayout.show(cards, "dataPanel");
+                                }
+                            });
+                            selectedAgentPanel.add(backButton);
+
+                            cards.add(selectedAgentPanel, "selectedAgentPanel");
+                            cardLayout.show(cards, "selectedAgentPanel");
+                        }
+                    }
+                });
 
                 cards.add(dataPanel, "dataPanel");
 
@@ -198,8 +268,14 @@ public class Test extends JFrame {
         
         
         JButton btnSkins = new JButton("Skins");
-        btnSkins.setBounds(0, 299, 384, 100);
+        btnSkins.setFont(new Font("Arial", Font.BOLD, 17));
+        btnSkins.setBounds(0, 354, 384, 100);
         buttonPanel.add(btnSkins);
+        btnSkins.setBackground(new Color(255, 75, 80));
+        btnSkins.setForeground(Color.WHITE);
+        btnSkins.setFocusPainted(false);
+        btnSkins.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        btnSkins.setBorder(BorderFactory.createLineBorder(new Color(14, 25, 35), 3, true));
         btnSkins.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -237,6 +313,30 @@ public class Test extends JFrame {
                     }
                 });
                 dataPanel.add(backButton);
+                
+                list.addMouseListener(new java.awt.event.MouseAdapter() {
+                    @Override
+                    public void mouseClicked(java.awt.event.MouseEvent e ) {
+                        if (e.getClickCount() == 2) {
+                            String selectedItem = list.getSelectedValue();
+                            // Add code here to show the selected data on a new panel
+                            JPanel selectedSkinPanel = new JPanel();
+                            JLabel selectedDataLabel = new JLabel("You selected: " + selectedItem);
+                            selectedSkinPanel.add(selectedDataLabel);
+                            JButton backButton = new JButton("Back");
+                            backButton.addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    cardLayout.show(cards, "dataPanel");
+                                }
+                            });
+                            selectedSkinPanel.add(backButton);
+
+                            cards.add(selectedSkinPanel, "selectedSkinPanel");
+                            cardLayout.show(cards, "selectedSkinPanel");
+                        }
+                    }
+                });
 
                 cards.add(dataPanel, "dataPanel");
 
@@ -246,8 +346,21 @@ public class Test extends JFrame {
         });
         
         JButton btnWeapons = new JButton("Weapons");
-        btnWeapons.setBounds(0, 399, 384, 100);
+        btnWeapons.setFont(new Font("Arial", Font.BOLD, 17));
+        btnWeapons.setBounds(0, 454, 384, 100);
         buttonPanel.add(btnWeapons);
+        btnWeapons.setBackground(new Color(255, 75, 80));
+        btnWeapons.setForeground(Color.WHITE);
+        btnWeapons.setFocusPainted(false);
+        btnWeapons.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        btnWeapons.setBorder(BorderFactory.createLineBorder(new Color(14, 25, 35), 3, true));
+        
+        JLabel lblNewLabel = new JLabel("Valorant");
+        lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        lblNewLabel.setFont(new Font("Westmeath", Font.PLAIN, 40));
+        lblNewLabel.setForeground(new Color(255, 255, 255));
+        lblNewLabel.setBounds(88, 11, 209, 33);
+        buttonPanel.add(lblNewLabel);
         btnWeapons.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -285,6 +398,30 @@ public class Test extends JFrame {
                     }
                 });
                 dataPanel.add(backButton);
+                
+                list.addMouseListener(new java.awt.event.MouseAdapter() {
+                    @Override
+                    public void mouseClicked(java.awt.event.MouseEvent e ) {
+                        if (e.getClickCount() == 2) {
+                            String selectedItem = list.getSelectedValue();
+                            // Add code here to show the selected data on a new panel
+                            JPanel selectedWeaponPanel = new JPanel();
+                            JLabel selectedDataLabel = new JLabel("You selected: " + selectedItem);
+                            selectedWeaponPanel.add(selectedDataLabel);
+                            JButton backButton = new JButton("Back");
+                            backButton.addActionListener(new ActionListener() {
+                                @Override
+                                public void actionPerformed(ActionEvent e) {
+                                    cardLayout.show(cards, "dataPanel");
+                                }
+                            });
+                            selectedWeaponPanel.add(backButton);
+
+                            cards.add(selectedWeaponPanel, "selectedWeaponPanel");
+                            cardLayout.show(cards, "selectedWeaponPanel");
+                        }
+                    }
+                });
 
                 cards.add(dataPanel, "dataPanel");
 
@@ -300,7 +437,7 @@ public class Test extends JFrame {
         // Add the card layout to the window
         getContentPane().add(cards);
 
-        setSize(400, 539);
+        setSize(400, 593);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
