@@ -177,6 +177,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Play_Station_5 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Play_Station_5">
@@ -273,14 +281,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -373,8 +373,10 @@
         <relessMap rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Split"/>
         <relessMap rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#The_Range"/>
         <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Competitive"/>
+        <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Shooting_Test"/>
+        <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Defuse"/>
+        <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Planting"/>
         <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Swiftplay"/>
-        <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#The_Range"/>
         <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Unrated"/>
         <relessWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Ares"/>
         <relessWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Bucky"/>
@@ -479,7 +481,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Weapons"/>
         <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Magepunk"/>
-        <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime//2.0"/>
+        <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime2"/>
     </owl:NamedIndividual>
     
 
@@ -537,9 +539,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse"/>
     </owl:NamedIndividual>
     
 
@@ -827,6 +829,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAYO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAYO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Agents"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
+        <rdfs:comment>Initiator</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Killjoy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Killjoy">
@@ -925,7 +941,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Weapons"/>
         <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#BlastX"/>
-        <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime//2.0"/>
+        <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime2"/>
     </owl:NamedIndividual>
     
 
@@ -1019,20 +1035,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Modes -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Modes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Game_Modes"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime">
@@ -1047,6 +1049,22 @@
         <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Guardian"/>
         <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spectre"/>
         <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Vandal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Collection"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Skins"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
+        <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Bucky"/>
+        <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Odin"/>
     </owl:NamedIndividual>
     
 
@@ -1102,9 +1120,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse"/>
     </owl:NamedIndividual>
     
 
@@ -1196,6 +1214,20 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Weapons"/>
         <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Ion"/>
         <hasSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Sakura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Shooting_Test -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Shooting_Test">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Game_Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
     </owl:NamedIndividual>
     
 
@@ -1334,6 +1366,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Defuse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Defuse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Game_Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Planting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Planting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Practice_Game_Modes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Rush -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Spike_Rush">
@@ -1341,9 +1401,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse"/>
     </owl:NamedIndividual>
     
 
@@ -1399,9 +1459,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse"/>
     </owl:NamedIndividual>
     
 
@@ -1428,11 +1488,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Maps"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdfs:comment>Practice</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1444,9 +1502,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Modes"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PlantDefuse"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Plant/Defuse"/>
     </owl:NamedIndividual>
     
 
@@ -1509,6 +1567,7 @@
         <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Aristocrat"/>
         <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime"/>
         <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Rush"/>
+        <relessWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Golden_Gun"/>
     </owl:NamedIndividual>
     
 
@@ -1642,6 +1701,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <relessMode rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Snowball_Fight"/>
         <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#BlastX"/>
+        <relessWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Snowball_Launcher"/>
     </owl:NamedIndividual>
     
 
@@ -1695,7 +1755,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Patch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <relessAgent rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Astra"/>
-        <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime//2.0"/>
+        <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime2"/>
     </owl:NamedIndividual>
     
 
@@ -1747,7 +1807,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Patch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
-        <relessAgent rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAY/O"/>
+        <relessAgent rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAYO"/>
     </owl:NamedIndividual>
     
 
@@ -1881,36 +1941,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Patch"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
         <relessSkin rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Luna"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAY/O -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#KAY/O">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Agents"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <rdfs:comment>Initiator</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime//2.0 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Prime//2.0">
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Collection"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#FPS_For_PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Game"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#PC"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Skins"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Valorant_Detail"/>
-        <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Bucky"/>
-        <hasWeapon rdf:resource="http://www.semanticweb.org/asus/ontologies/2566/0/untitled-ontology-17#Odin"/>
     </owl:NamedIndividual>
     
 
